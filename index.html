@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Forge — Find. Build. Close.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Forge is the agency OS that finds local businesses with weak websites, builds modern sites in minutes, and helps you close the deal.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0B0F1A;
+  --paper: #F4F6FA;
+  --volt: #4F5BFF;
+  --blaze: #FF7A3D;
+  --lime: #19E6B4;
+  --stone: #5B6475;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: 500 16px/1.5 'Inter', system-ui, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+.band { padding: 8vh 6vw; }
+.hero {
+  background-color: var(--ink);
+  background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  color: #fff;
+}
+h1, h2 {
+  font: 800 clamp(42px, 9vw, 96px)/1.05 'Inter', system-ui, sans-serif;
+  margin: 0 0 16px;
+  letter-spacing: -0.04em;
+}
+h2 { font-size: clamp(32px, 6vw, 56px); }
+.logo-mark { color: var(--lime); }
+.btn {
+  display: inline-block;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 24px;
+  font: 600 15px 'Inter', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn.l { background: var(--lime); color: var(--ink); }
+.btn.g { background: none; border: 1px solid var(--ink); color: var(--ink); }
+.btn.w { background: #fff; color: var(--ink); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.card {
+  background: #fff;
+  border: 1px solid rgba(9,7,8,.1);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(11,15,26,.06), 0 10px 28px rgba(11,15,26,.05);
+  padding: 24px;
+}
+.card b { font-size: 20px; display: block; margin-bottom: 8px; }
+.price {
+  font: 800 52px/1 'Inter', system-ui, sans-serif;
+  letter-spacing: -0.04em;
+  margin: 12px 0 8px;
+}
+.features { list-style: none; padding: 0; margin: 16px 0 0; }
+.features li {
+  padding: 6px 0;
+  padding-left: 24px;
+  position: relative;
+}
+.features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--lime);
+  font-weight: 700;
+}
+.sec { max-width: 1100px; margin: 0 auto; }
+footer {
+  padding: 40px 6vw;
+  font-size: 14px;
+  color: var(--stone);
+  border-top: 1px solid rgba(9,7,8,.08);
+}
+</style>
+</head>
+<body>
+<div class="band hero">
+  <div class="sec">
+    <div style="font:800 28px/1 Inter,system-ui;margin-bottom:24px;letter-spacing:-0.03em">For<span class="logo-mark">ge</span></div>
+    <h1>Find the lead.<br>Build the site.<br>Close the deal.</h1>
+    <p style="font-size:20px;max-width:580px;opacity:.9;margin:0 0 28px">
+      The agency OS for people who sell websites to local businesses.
+      Lead finder, site studio, cold email sequences, payment links, and one-click style publishing.
+    </p>
+    <a class="btn l" href="app.html">Open Forge</a>
+    <a class="btn w" href="#how" style="margin-left:10px">See how it works</a>
+  </div>
+</div>
+
+<div class="band" id="how">
+  <div class="sec">
+    <h2>How it works</h2>
+    <div class="grid">
+      <div class="card">
+        <b>1. Find hot leads</b>
+        <p>Search Google Maps / Yelp for businesses in any niche and city. Score them on missing sites, no mobile, old copyright, no contact form. 4+ signals = hot lead.</p>
+      </div>
+      <div class="card">
+        <b>2. Build the demo</b>
+        <p>Type the business name, industry, city and services. Forge generates a clean 4-page mobile site in seconds. Preview it, download the HTML, or copy the code.</p>
+      </div>
+      <div class="card">
+        <b>3. Send the sequence</b>
+        <p>Three ready-to-send cold emails that include a free demo offer, follow-up, and your Stripe or Square payment link. Close the deal.</p>
+      </div>
+      <div class="card">
+        <b>4. Publish live</b>
+        <p>Download the HTML and drop it on Netlify Drop or Cloudflare Pages. Live URL in under two minutes. Charge for the site + optional monthly care plan.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="band" style="background:#fff">
+  <div class="sec">
+    <h2>What you get</h2>
+    <div class="grid">
+      <div class="card">
+        <b>Site Studio</b>
+        <p>Four-page sites (Home, About, Services, Contact) with five professional themes. Custom colours available. Download or copy in one click.</p>
+      </div>
+      <div class="card">
+        <b>Lead Finder + Pipeline</b>
+        <p>Score businesses, move them to pipeline, track stages (new → demo → proposal → won), and see open vs closed revenue.</p>
+      </div>
+      <div class="card">
+        <b>Ready-to-post ads</b>
+        <p>Facebook, Google, Craigslist, Fiverr, Upwork, Instagram, LinkedIn, X, Nextdoor. All pre-filled with your price and payment links.</p>
+      </div>
+      <div class="card">
+        <b>Stripe + Square</b>
+        <p>Drop your payment links in Settings. They appear automatically in client emails and the “after they say yes” message.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="band">
+  <div class="sec">
+    <h2>Simple pricing for you</h2>
+    <p style="color:var(--stone);max-width:560px">You keep 100% of what you charge clients. Forge itself is currently a self-hosted tool you run in the browser. Later we can add multi-user cloud plans if you want a team version.</p>
+    <div class="grid" style="margin-top:28px">
+      <div class="card">
+        <b>Client site</b>
+        <div class="price">$799</div>
+        <p style="color:var(--stone)">Default price you can change in Settings. Typical range $499–$1,500 for a 4-page local business site.</p>
+        <ul class="features">
+          <li>4-page mobile site</li>
+          <li>Demo before they pay</li>
+          <li>Publish in minutes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <b>Monthly care</b>
+        <div class="price">$39<span style="font-size:18px;font-weight:600">/mo</span></div>
+        <p style="color:var(--stone)">Optional hosting, small edits, and support. Recurring revenue on every closed deal.</p>
+        <ul class="features">
+          <li>Hosting included</li>
+          <li>Minor copy/design updates</li>
+          <li>You set the price</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="band" style="background:var(--ink);color:#fff">
+  <div class="sec" style="text-align:center">
+    <h2 style="color:#fff">Ready to close your first deal this week?</h2>
+    <p style="opacity:.85;max-width:480px;margin:0 auto 28px">Open Forge, add your Stripe or Square link, pull 10 local leads, and send the first email sequence today.</p>
+    <a class="btn l" href="app.html">Open Forge now</a>
+  </div>
+</div>
+
+<footer>
+  <div class="sec">
+    <strong>Forge</strong> — Find. Build. Close. · Built for operators who sell websites to local businesses.
+  </div>
+</footer>
+</body>
+</html>
